@@ -1,0 +1,101 @@
+
+
+/* SURVIVAL */
+
+.survival__content {
+    padding: 300px 0;
+    line-height: 170px;
+}
+
+.survival__content h1 {
+    color: #CD6326;
+    font-size: 80px;
+}
+
+.survival__content p {
+    width: 400px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.survival__content button {
+    background-color: #CD6326;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.survival__content button:hover {
+    opacity: 0.6;
+    transition: .3s;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .header__content {
+        display: block;
+
+    }
+    .header__nav ul {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 420px) {
+    .survival__content {
+        text-align: center;
+        padding: 200px 0;
+    }
+    
+    .survival__content h1 {
+        font-size: 60px;
+    }
+    
+    .survival__content p {
+        width: 300px;
+        letter-spacing: 3px;
+        line-height: 40px;
+        font-size: 22px;
+    }
+    
+    .survival__content button {
+        background-color: #CD6326;
+        border: none;
+        border-radius: 5px;
+        padding: 20px 30px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .survival__content button:hover {
+        opacity: 0.7;
+        transition: .3s;
+    }
+
+    
+}
+
+@media (max-width: 340px) {
+    
+}
