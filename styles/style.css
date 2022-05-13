@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+a, ul {
+    text-decoration: none;
+    List-style: none;
+}
+
+a, p, input, h1, h2, h3, button {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ***** HEADER ****** */
+
+
+.survival-block {
+    background-image: url('./../public/image/Rectangle.jpg');
+    background-size: cover;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.header__logo  h1 {
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.header__nav ul {
+    display: flex;
+    column-gap: 100px;
+    font-size: 23px;
+}
+
+.header__nav button {
+    background: none;
+    border: 2px solid #CD6326;
+    border-radius: 3px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .header__content {
+        display: block;
+
+    }
+    .header__nav ul {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+}
+
+@media (max-width: 340px) {
+    
+}
