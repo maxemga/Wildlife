@@ -39,3 +39,60 @@
 .footer__content div:first-child a{
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .footer__content {
+        flex-direction: column;
+        row-gap: 70px;
+    }
+
+
+
+    
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+
+@media (max-width: 1024px) {
+
+    
+
+  
+
+}
+
+@media (max-width: 768px) {
+
+    .footer__nav__item nav {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+}
+
+@media (max-width: 420px) {
+
+    
+
+}
+
+@media (max-width: 420px) {
+
+}
+
+@media (max-width: 340px) {
+    
+}
