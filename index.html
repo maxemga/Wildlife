@@ -9,11 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-
-
     <div class="survival-block">
         <div class="wrapper">
-            <div class="header">
+            <div class="header" id="header">
                 <div class="header__content">
                     <div class="header__logo">
                         <a href="">
@@ -23,10 +21,10 @@
                     </div>
                     <div class="header__nav">
                         <ul>
-                            <li><a href="">Articles</a></li>
-                            <li><a href="">Contacts</a></li>
-                            <li><img src="public/image/Vector.svg" alt="Logo"></li>
-                            <li><button>Sign in</button></li>
+                            <li><a href="#articles">Articles</a></li>
+                            <li><a href="#footer">Contacts</a></li>
+                            <li class="header__nav__icon"><a href="#form"><img src="public/image/Vector.svg" alt="Logo"></a></li>
+                            <button>Sign in</button>
                         </ul>
                     </div>
                 </div>
@@ -35,14 +33,13 @@
                 <div class="survival__content">
                     <h1>Survival</h1>
                     <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
-                    <button>Donate</button>
+                    <button class="donate">Donate</button>
                 </div>
             </div>
         </div>
     </div>
            
-
-    <div class="articles">
+    <div class="articles" id="articles">
         <div class="wrapper">
             <div class="articles__top">
                 <h1>Latest articles</h1>
@@ -80,18 +77,30 @@
         </div>
     </div>
     
-    <div class="footer">
+    <div class="form" id="form">
+        <div class="wrapper">
+           <div class="form__content">
+               <h1>Get notified about new amazing articles</h1>
+               <div class="form__input">        
+                    <input type="text" placeholder="Email">
+                    <button>Send</button>               
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__content">
                 <div class="footer__nav">
-                    <a href="#">
+                    <a href="#header">
                         <img src="public/image/path0.svg" alt="Logo">
                         <h1>WILDLIFE</h1>
                     </a>
                 </div>
                 <div class="footer__nav footer__nav__item">
                     <nav>
-                        <a href="#">Aricles</a>
+                        <a href="#articles">Aricles</a>
                         <a href="#">About us</a>
                         <a href="#">Learn more</a>
                     </nav>
@@ -105,8 +114,35 @@
                     </nav>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <h1>Donate</h1>
+                <div class="modal__form">
+                    <label for="email">Your name</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="modal__form">
+                    <label for="ammount">Ammount</label>
+                    <input type="text" name="ammount">
+                </div>
+                <div class="modal__form">
+                    <label for="comment">Tour comment</label>
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button class="modal__form__button">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- <div class="refund">
+        <a href="#header">Вернуться</a>
+    </div> -->
+    <a class="refund" href="#header"></a>
+
+<script src="./scripts/script.js"></script>       
 </body>
 </html>
