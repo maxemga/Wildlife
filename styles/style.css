@@ -395,6 +395,113 @@ a, p, input, h1, h2, h3, button, label {
     right: 30px;  
 }
 
+.modal__nav {
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: .3s;
+    z-index: 1;
+}
+
+.modal__nav.active {
+    transform: translateX(0%);
+    transition: .3s;
+}
+
+.modal__nav__close {
+    z-index: 100;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    
+}
+
+.modal__nav__close span{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.modal__nav__close span:before,
+.modal__nav__close span:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 26px;
+    height: 4px;
+    background: #E78E34;
+}
+
+.modal__nav__close span:before {
+    transform: rotate(45deg);
+}
+
+.modal__nav__close span:after {
+    transform: rotate(-45deg);
+}
+
+
+.modal__nav nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    padding: 150px;
+    font-size: 40px;
+}
+
+.modal__nav a {
+    color: black;
+    transition: .3s;
+}
+
+.modal__nav a:hover {
+    color: #CD6326;
+    transition: .3s;
+}
+
+.header__burger span {
+    height: 23px;
+    width: 15px;
+    background-color: #CD6326;
+    border-radius: 1px;
+}
+
+
+.header__burger {
+    position: relative;
+    top: 10px;
+    height: 50px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.header__burger span, .header__burger:after, .header__burger:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #CD6326;
+    margin: 0 auto;
+}
+.header__burger span{
+    
+}
+.header__burger:after, .header__burger:before{
+    content: '';
+}
+.header__burger:after{
+    top: 10px;
+}
+.header__burger:before{
+   top: 20px;
+}
+
 @keyframes shadow {
     from {
         display: block;
@@ -408,9 +515,11 @@ a, p, input, h1, h2, h3, button, label {
 }
 
 @media screen and (max-width: 1200px) {
-    .header__content {
+    .header__nav {
+        display: none;
+    }
+    .header__burger {
         display: block;
-
     }
     
     .header__nav ul {
@@ -437,18 +546,7 @@ a, p, input, h1, h2, h3, button, label {
     .row {
         display: none;
     }
-    .articles__bottom {
-        display: block;
-        width: 100%;
-    }
-    .item {
-        margin-top: 20px;
-        width: 100%;
-    }
-    .item img {
-        height: 400px;
-        width: 100%;
-    }
+
 
 }
 
@@ -467,11 +565,33 @@ a, p, input, h1, h2, h3, button, label {
         row-gap: 20px;
 
     }
+    .articles__bottom {
+        padding-top: 100px;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .item {
+        margin-top: 30px;
+    }
+
+    .articles__bottom img {
+        width: 100%;
+    }
 
 }
 
 @media (max-width: 420px) {
+    .header__logo {
+        display: none;
+    }
 
+    .articles__bottom {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
 
     .survival__content {
         text-align: center;
@@ -515,6 +635,20 @@ a, p, input, h1, h2, h3, button, label {
     .form__input button{
         width: 80px;       
     }
+
+    .modal__nav nav {
+        padding: 60px;
+        font-size: 25px;
+    }
+
+    .modal__nav__close {
+        z-index: 100;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+    }
+    
 }
 
 
